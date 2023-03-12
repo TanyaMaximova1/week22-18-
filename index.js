@@ -82,8 +82,19 @@ document.addEventListener("DOMContentLoaded", function (event) {
         <div>Занятость: ${card.occupation}</div>
         <div>Друзья: ${card.friends}</div>
         <div>Суперсила: ${card.superpowers}</div>
-        <div>Изобрадение: ${card.friends}</div>
-        <div>История: ${card.superpowers}</div>`;
+        <div>Изображение: <img class='image' src="${card.url}" alt="Изображение супергероя">
+        </div>
+        <div>История: ${card.superpowers}</div>
+        <div class="ratio">
+        <input type="radio" class="star-ratio" name="rt">
+        <input type="radio" class="star-ratio" name="rt">
+        <input type="radio" class="star-ratio" name="rt">
+        <input type="radio" class="star-ratio" name="rt">
+        <input type="radio" class="star-ratio" name="rt">
+        </div>
+        </div>`;
     }
     document.getElementById("cardsContainer").innerHTML = cardContent;
 });
+
+

@@ -1,8 +1,107 @@
+.conteiner {
+    display: flex;
+    justify-content: center;
+}
+
 .cardsContainer {
+    max-width: 90%;
+    max-height: 100%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .cards {
+    width: 600px;
+    height: 850px;
     display: flex;
+    flex-direction: column;
+    background-color: rgb(84, 252, 6);
+    border: 5px solid red;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    font-size: 1.2em;
+}
+
+.image {
+    padding: 10px 10px 10px 10px;
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+}
+
+body {
+    background: #fff;
+}
+
+.star-ratio {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 2em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    font-size: 1em;
+}
+
+.ratio {
+    width: 10em;
+    height: 2em;
+    position: relative;
+    background: url(https://i.stack.imgur.com/HYO64.png);
+    background-size: 2em 2em;
+    background-repeat: repeat-x;
+
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+}
+
+.star-ratio:nth-of-type(1) {
+    width: 2em;
+    z-index: 5;
+}
+
+.star-ratio:nth-of-type(2) {
+    width: 4em;
+    z-index: 4;
+}
+
+.star-ratio:nth-of-type(3) {
+    width: 6em;
+    z-index: 3;
+}
+
+.star-ratio:nth-of-type(4) {
+    width: 8em;
+    z-index: 2;
+}
+
+.star-ratio:nth-of-type(5) {
+    width: 10em;
+    z-index: 1;
+}
+
+.star-ratio:checked,
+.star-ratio:hover {
+    background: url(https://i.stack.imgur.com/XV18m.png);
+    background-size: 2em 2em;
+    background-repeat: repeat-x;
+}
+
+.star-ratio:hover~.star-ratio {
+    background: url(https://i.stack.imgur.com/HYO64.png);
+    background-size: 2em 2em;
+    background-repeat: repeat-x;
 }
